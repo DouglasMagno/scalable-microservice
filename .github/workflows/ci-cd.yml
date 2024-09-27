@@ -28,7 +28,7 @@ jobs:
       run: pytest
 
     - name: Build Docker image
-      run: docker build -t dougmagno/scalable-microservice:latest .
+      run: docker build -f builder/docker/Dockerfile -t dougmagno/scalable-microservice:latest .
 
     - name: Push Docker image
       run: |

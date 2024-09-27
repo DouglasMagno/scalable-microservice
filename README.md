@@ -246,16 +246,17 @@ http://localhost/docs
 - **Docker service scalable-microservice has a volume with container to prevent builds for every code updates**
 ---
 # TODOS
-- **Split application in different sub domain modules like: `src/app/products`**
-- **Use unleash for feature flag controls**
-- **Use vault to protect vulnerable secrets**
-- **Use helm charts and terraform to reuse templates and automate services deployments**
-- **Split tests module to improve CI/CD async process. Ex: `tests/unit` or `tests/integration`**
-- **Add a python linter like flake8 to be safe from code mistakes or best practices**
-- **Define specific versions for requirements.txt dependencies**
-- **Move k8s folder to builder module**
-- **Add a readiness and liveness probe for k8s monitoring**
-- **services.get_all_data must have a redis cache to ensure read operation within 500ms to be stable in billions access scale. Look to this project as a first step**
-- **Use make commands in k8s and ci file**
+- **Split application in different sub domain modules like: `src/app/products`**: 2 days per module
+- **Use unleash for feature flag controls**: 2 days
+- **Use vault to protect vulnerable secrets**: 3 days
+- **Use helm charts and terraform to reuse templates and automate services deployments**: 4 days
+- **Split tests module to improve CI/CD async process. Ex: `tests/unit` or `tests/integration`**: 1 day per module
+- **Add a python linter like flake8 to be safe from code mistakes or best practices**: 1 day
+- **Define specific versions for requirements.txt dependencies**: < 1 day
+- **Move k8s folder to builder module**: < 1 day
+- **Add a readiness and liveness probe for k8s monitoring**: < 1 day
+- **services.get_all_data must have a redis cache to ensure read operation within 500ms to be stable in billions access scale. Look to this project as a first step** 2 days
+- **Use make commands in k8s and ci file**: < 1 day
+- **Add New Relic or other monitoring system**: < 1 day
 
 ---

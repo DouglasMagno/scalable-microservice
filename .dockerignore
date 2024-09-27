@@ -1,0 +1,52 @@
+# python / pip
+__pycache__/
+wheels/
+pip-log.txt
+pip-wheel-metadata/
+*.pytest_cache/
+**/*.pyc
+
+# caching / intermediate artifacts
+.cache
+.cache/
+.ash_history
+.DS_Store
+docker-compose*
+*env*
+
+# config
+.editorconfig
+.vscode
+.idea
+.circleci
+.dockerignore
+Makefile
+
+# git
+.gitignore
+.git
+.github
+.gitlab
+
+# logs
+*.log
+logs/
+
+# general
+.coverage
+*.md
+*.csv
+/tmp/*
+/devops/*
+*.eggs
+*.egg-info
+*.swp
+
+# docker bind volumes
+postgresql-data/
+
+# mongodb
+.data
+
+# Test generated files
+download-test

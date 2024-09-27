@@ -21,7 +21,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        pip install -r builder/requirements.txt
         pip install pytest pytest-asyncio
 
     - name: Run tests
@@ -33,7 +33,7 @@ jobs:
     - name: Push Docker image
       run: |
         echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-        docker push your-docker-repo/scalable-microservice:latest
+        docker push dougmagno/scalable-microservice:latest
 
     - name: Deploy to Kubernetes
       uses: azure/k8s-deploy@v4
@@ -42,6 +42,6 @@ jobs:
           k8s/deployment.yaml
           k8s/service.yaml
           k8s/ingress.yaml
-        images: your-docker-repo/scalable-microservice:latest
+        images: dougmagno/scalable-microservice:latest
         kubectl-version: 'latest'
         namespace: default

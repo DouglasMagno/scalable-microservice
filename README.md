@@ -95,8 +95,7 @@ TODO: link diagram
 ## Clone the Repository
 
 ```bash
-TODO: set my user name
-git clone https://github.com/yourusername/scalable-microservice.git
+git clone https://github.com/DouglasMagno/scalable-microservice.git
 cd scalable-microservice
 ```
 ## Environment Variables
@@ -104,7 +103,7 @@ cd scalable-microservice
 Create a `.env` file in the root directory with the following content:
 
 ```env
-MONGODB_URI=mongodb://localhost:27017
+MONGODB_URI=mongodb://mongo
 DATABASE_NAME=your_database_name
 ```
 ## Build

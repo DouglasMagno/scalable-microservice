@@ -100,7 +100,7 @@ cd scalable-microservice
 ```
 ## Environment Variables
 
-Create a `.env` file in the root directory with the following content:
+Create a `.env` file in the `builder/.env` directory with the following content:
 
 ```env
 MONGODB_URI=mongodb://mongo

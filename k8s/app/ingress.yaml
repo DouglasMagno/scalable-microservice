@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: scalable-microservice-ingress
+spec:
+  rules:
+  - host: mytest.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: scalable-microservice-service
+            port:
+              number: 80

@@ -6,7 +6,6 @@ With this project you can scale every piece that has a higher demand separately.
 
 # Table of Contents
 
-- [Project Overview](#project-overview)
 - [Architecture Overview](#architecture-overview)
 - [Design Decisions](#design-decisions)
 - [Setup Instructions](#setup-instructions)
@@ -15,7 +14,8 @@ With this project you can scale every piece that has a higher demand separately.
 - [Testing Strategy](#testing-strategy)
 - [Kubernetes Deployment Design](#kubernetes-deployment-design)
 - [Estimated Development Time](#estimated-development-time)
-- [Conclusion](#conclusion)
+- [Best practices](#best-practices)
+- [TODOs](#todos)
 
 ---
 

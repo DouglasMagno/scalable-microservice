@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  scalable-microservice:
+    build:
+      context: ../..
+      dockerfile: builder/docker/Dockerfile
+    ports:
+      - "80:80"
+    env_file:
+      - ../.env
+    volumes:
+      - ../..:/app
+    depends_on:
+      - mongo
+    networks:
+      - sm-bridge-network
+
+  mongo:
+    image: mongo:5.0.10
+    ports:
+      - '27019:27017'
+    volumes:
+      - ../../.data:/data/db
+    networks:
+      - sm-bridge-network
+    command: --quiet
+
+networks:
+  sm-bridge-network:
+    driver: bridge

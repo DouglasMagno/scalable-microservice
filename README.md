@@ -40,7 +40,8 @@ The microservice follows a layered architecture to promote separation of concern
 **Architectural Diagram**:
 
 *Since visual diagrams cannot be displayed here, below is a textual representation.*
-TODO: link diagram
+
+[Diagram link](https://drive.google.com/file/d/1JPMfH03v_ImUFzwY2CBibOwuiTw8pWWs/view?usp=sharing)
 ```
 +-------------------+
 |    API Layer      |  <-- FastAPI Endpoints (POST /data, GET /data)
@@ -147,6 +148,7 @@ The CI/CD pipeline is orchestrated using **GitHub Actions** and consists of the 
 
 **CI/CD Pipeline Diagram**:
 
+[Diagram link](https://drive.google.com/file/d/13isfLkYy-w73m4qEDNCPeyxjYnM3gFR-/view?usp=sharing)
 ```
 [Git Push] --> [GitHub Actions Triggered]
                   |
@@ -183,7 +185,7 @@ The CI/CD pipeline is orchestrated using **GitHub Actions** and consists of the 
 - **Secret**: Stores sensitive information like database credentials.
 
 **Deployment Diagram**:
-
+[Diagram link](https://drive.google.com/file/d/1coU6Dgp2dfHbBxFyXCN9WXeAWUbpQT05/view?usp=sharing)
 ```
 [Deployment]
      |

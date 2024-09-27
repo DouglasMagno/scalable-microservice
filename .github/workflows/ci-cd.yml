@@ -28,8 +28,7 @@ jobs:
       run: pytest
 
     - name: Build Docker image
-      #TODO: user name
-      run: docker build -t your-docker-repo/scalable-microservice:latest .
+      run: docker build -t dougmagno/scalable-microservice:latest .
 
     - name: Push Docker image
       run: |
